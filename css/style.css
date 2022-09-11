@@ -1,0 +1,135 @@
+/*FONT STYLES
+font-family: 'Bree Serif', serif; //BREE
+font-family: 'Cabin', sans-serif; //CABIN
+font-family: 'Inria Serif', serif; //INRIA
+
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  background-color: #EAE3D2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add a black background color to the top navigation */
+.topNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index:1;
+  background-color: #1C3879;
+  overflow: hidden;
+  padding: 0px 50px 0px 80px;
+  font-family: 'Bree Serif', serif;
+}
+
+.footer{
+  width: 100%;
+  background-color: #1C3879;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Bree Serif', serif;
+  color: white;
+}
+
+/* Style the links inside the navigation bar */
+.topNav #menu {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topNav #menu:hover {
+  background-color: #607EAA;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topNav #menu.active {
+  background-color: #607EAA;
+  color: white;
+}
+
+.topNav #logo {
+  float: left;
+  color: white;
+  margin: auto;
+  flex-direction: center;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+hr {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 40px;
+  color: #1C3879;
+}
+
+.holder {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #F9F5EB;
+  width: 70%;
+  border-radius: 2%;
+}
+
+.text{
+  text-align: justify;
+}
+
+.text #text_about{
+  padding-left: 300px; 
+}
+
+/*padding-left: 300px; for lining text with text in about me*/
+
+.text h2{
+  font-family: 'Cabin', sans-serif;
+  font-size: 45px;
+  color: #1C3879;
+  margin-bottom: -18px;
+}
+
+.text h3 {
+  font-family: 'Inria Serif', serif;
+  font-size: 22px;
+  margin-bottom: -15px;
+}
+
+.text p {
+  font-family: 'Inria Serif', serif;
+  font-size: 15px;
+}
+
+.holder #profilePhoto {
+  float: left;
+  height: 250px;
+  width: 250px;
+  border: 7px solid #EAE3D2;
+  border-radius: 50%;
+}
+
+
+
+
