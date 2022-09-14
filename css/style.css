@@ -194,7 +194,7 @@ h1{
 
 #contactDetails p{
   font-family: 'Inria Serif', serif;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: bold;
   margin-top: 0;
 
@@ -202,7 +202,7 @@ h1{
 
 #contactDetails a{
   font-family: 'Cabin', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   color: #1C3879;
   text-decoration: none;
@@ -214,7 +214,7 @@ h1{
 
 #contactDetails ins{
   font-family: 'Cabin', sans-serif;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
 }
 
