@@ -77,8 +77,10 @@ hr {
 h1{
   text-align: center;
   font-family: 'Bree Serif', serif;
-  font-size: 40px;
+  font-weight: lighter;
+  font-size: 45px;
   color: #1C3879;
+  margin-bottom: 15px;
 }
 
 .holder {
@@ -130,6 +132,91 @@ h1{
   border-radius: 50%;
 }
 
+.table_container {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 30px;
+}
+
+.table_container #title_text {
+  font-family: 'Cabin', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1C3879;
+}
+
+.table_container #inria_bold {
+  font-family: 'Inria Serif', serif;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.table_container #inria_normal {
+  font-family: 'Inria Serif', serif;
+  font-size: 15px;
+}
+
+.table_container #text_datePlace {
+  font-family: 'Inria Serif', serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#education .table_container #inria_normal {
+  font-family: 'Inria Serif', serif;
+  font-size: 18px;
+}
+
+#education .table_container #text_datePlace {
+  font-family: 'Inria Serif', serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table_container #image_container {
+  height: 180px;
+  width: 180px;
+  padding-right: 30px;
+}
+
+.table_container img {
+  height: 180px;
+  width: 180px;
+}
+
+.table_container #work_details {
+  list-style: none;
+}
+
+.table_container #tasks_done {
+  list-style: square;
+}
+
+#contactDetails p{
+  font-family: 'Inria Serif', serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+
+}
+
+#contactDetails a{
+  font-family: 'Cabin', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1C3879;
+  text-decoration: none;
+}
+
+#contactDetails center{
+  padding-bottom: 20px;
+}
+
+#contactDetails ins{
+  font-family: 'Cabin', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
 
 
 
