@@ -37,7 +37,7 @@ html {
 }
 
 /* Style the links inside the navigation bar */
-.topNav #menu {
+.topNav a {
   float: right;
   color: white;
   text-align: center;
@@ -47,24 +47,38 @@ html {
 }
 
 /* Change the color of links on hover */
-.topNav #menu:hover {
+.topNav a:hover {
   background-color: #607EAA;
   color: white;
+}
+
+/* Add a color to the active/current link
+.topNav a.active {
+  background-color: #607EAA;
+  color: white;
+} */
+
+
+.topNav #logo {
+    position: absolute; /* Takes it out of the layout flow */
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%); /* Centers it perfectly vertically */
+    font-size: 35px; /* Make it as big as you want! */
+    line-height: 1;
+    z-index: 11;
+    /* Optional: add a text-shadow to help it stand out if it overlaps content */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.topNav #logo:hover{
+  background-color: #1C3879;
 }
 
 /* Add a color to the active/current link */
-.topNav #menu.active {
+.topNav a.active {
   background-color: #607EAA;
   color: white;
-}
-
-.topNav #logo {
-  float: left;
-  color: white;
-  margin: auto;
-  flex-direction: center;
-  text-decoration: none;
-  font-size: 35px;
 }
 
 hr {
@@ -217,6 +231,5 @@ h1{
   font-size: 28px;
   font-weight: bold;
 }
-
 
 

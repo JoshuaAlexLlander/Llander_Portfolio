@@ -12,13 +12,14 @@
 <body class="body">
 	<!-- navbar -->
 	<div class="topNav">
-			<a id = "logo" href="#aboutMe">J.A. Llander</a>
-			<a id = "menu" href="#Search">🔍</a>
-			<a id = "menu" href="#contactDetails">Contact</a>
-			<a id = "menu" href="#education">Education</a>
-			<a id = "menu" href="#workExperience">Work Experience</a>
-			<a id = "menu" href="#projects">Projects</a>
-			<a id = "menu" class="active" href="#aboutMe">Home</a>
+		<a id="logo" href="#aboutMe">J.A. Llander</a>
+		
+		<a class="menu" href="#Search">🔍</a>
+		<a class="menu" href="#contactDetails">Contact</a>
+		<a class="menu" href="#education">Education</a>
+		<a class="menu" href="#workExperience">Work Experience</a>
+		<a class="menu" href="#projects">Projects</a>
+		<a id="homeLink" class="menu active" href="#aboutMe">Home</a>
 	</div>
 	<!-- end navbar -->
 	<!-- about me -->
@@ -208,5 +209,31 @@
 		<p>Copyright ⓒ 2022 - Joshua Alex Llander</p>
 	</div>
 	<!-- end footer -->
+
+	<!-- JS Scripts -->
+	<script>
+		const menuButtons = document.querySelectorAll('.menu');
+		const logoButton = document.getElementById('logo');
+		const homeLink = document.getElementById('homeLink');
+
+		// Function to clear all active classes and set a specific one
+		function setActive(targetButton) {
+			menuButtons.forEach(btn => btn.classList.remove('active'));
+			targetButton.classList.add('active');
+		}
+
+		// 1. Handle Menu Clicks
+		menuButtons.forEach(button => {
+			button.addEventListener('click', function() {
+				setActive(this);
+			});
+		});
+
+		// 2. Handle Logo Click (Resets to Home)
+		logoButton.addEventListener('click', function() {
+			setActive(homeLink);
+		});
+	</script>
+	<!-- end JS Scripts -->
 </body>
 </html>
