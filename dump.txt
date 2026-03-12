@@ -1,0 +1,71 @@
+from database.txt
+**old DB Schema -- deleted due to Posts table being a GOD table which is not advisable due to:
+                    1. Possible bottleneck issue (when there is too much data)
+                    2. Against DB normalization policy -- reduces integriy
+
+2. What data would be needed in the database
+    + types
+        - id
+        - name
+    + posts
+        - id
+        - type
+        - description (for summaries, descriptions, details, links)
+        - name (me, project, work, education)
+        - image_directory
+        - date_from
+        - date_to
+    + descriptions
+        - id
+        - name
+        - content
+
+
+***************V2 database**********
+    + experience_types
+        - id
+        - type
+     + user_types
+        - id
+        - type
+
+*************V3 database********
+    + types
+        - id
+        - category (user, experience)
+        - type
+    + users
+        - id
+        - type_id
+        - name
+        - email
+        - password
+        - profile_photo
+        - headline
+        - summary
+        - location
+    + experiences
+        - id
+        - type_id
+        - institution
+        - title
+        - logo
+        - date_from
+        - date_to
+        - location
+    + experience_details
+        - id
+        - experience_id
+        - content
+    + projects
+        - id
+        - name
+        - description
+        - image
+        - url
+        - date_created
+        - date_deployed
+    + social_links
+        - id
+        - platform_name
+        - url

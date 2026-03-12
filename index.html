@@ -13,8 +13,8 @@
 	<!-- navbar -->
 	<div class="topNav">
 		<a id="logo" href="#aboutMe">J.A. Llander</a>
-		
-		<a class="menu" href="#Search">🔍</a>
+		<a class="menu" href="#search">🔍</a>
+		<a class="menu" href="/index.html">Post Update</a>
 		<a class="menu" href="#contactDetails">Contact</a>
 		<a class="menu" href="#education">Education</a>
 		<a class="menu" href="#workExperience">Work Experience</a>
@@ -23,123 +23,162 @@
 	</div>
 	<!-- end navbar -->
 	<!-- about me -->
-	<section id="aboutMe">
-	</br></br></br>
-		<center>
-		<h1>About Me</h1>
-		<div class="holder">
-			<img id="profilePhoto" src="img/profile_photo.png">
-			<div class="text">
-				<section id="text_about">
-					<h2>Joshua Alex I. Llander</h2>
-					<h3>Software Developer | B.S. in Computer Science</h3>
-					<p>I am a Computer Science graduate with professional experience in web and desktop application development and system support. I have hands-on experience using PHP (Laravel), HTML, CSS, MySQL, MS SQL Server, Visual Basic (.NET/VB6), and Crystal Reports. I am proficient in SQL scripting for reporting and data analysis, with working knowledge of Python, Java, C, C++, and C#. I perform best in backend development, system enhancement, application support, and structured problem-solving. </p>
-				</section>
+	<div class="menu-section">
+		<section id="aboutMe">
+			<h1 class="center">About Me</h1>
+			<div class="holder">
+				<img id="profilePhoto" src="img/profile_photo.png">
+				<div class="text">
+					<section id="text_about">
+						<!-- <h2>Joshua Alex I. Llander</h2> -->
+						 <div class="title-row">
+							<h2>Joshua Alex I. Llander</h2>
+							<div class="admin-controls">
+								<a href="#" class="btn-edit">Edit</a>
+								<button class="btn-delete">Delete</button>
+							</div>
+						</div>
+						<h3>Software Developer | B.S. in Computer Science</h3>
+						<p>I am a Computer Science graduate with professional experience in web and desktop application development and system support. I have hands-on experience using PHP (Laravel), HTML, CSS, MySQL, MS SQL Server, Visual Basic (.NET/VB6), and Crystal Reports. I am proficient in SQL scripting for reporting and data analysis, with working knowledge of Python, Java, C, C++, and C#. I perform best in backend development, system enhancement, application support, and structured problem-solving. </p>
+					</section>
+				</div>
 			</div>
-		</div>
-		<hr></center>
-	</section>
+			<hr>
+		</section>
+	</div>
 	<!-- end about me -->
 
 	<!-- projects -->
-	<section id="projects">
-		<center>
-		<h1>Projects</h1>
-		<div class="holder">
-			<div class="text">
-				<section id="text_projects">
-					<center>
-					<img src="img/WIP.gif">
-					<p>Work in Progress. Projects will be posted here.</p>
-					</center>
-				</section>
+	<div class="menu-section tight-padding">
+		<section id="projects">
+			<h1>Projects</h1>
+			<div class="holder">
+				<div class="text">
+					<section id="text_projects">
+						<img src="img/WIP.gif">
+						<p>Work in Progress. Projects will be posted here.</p>
+					</section>
+				</div>
 			</div>
-		</div>
-		<hr></center>
-	</section>
+			<hr>
+		</section>		
+	</div>
 	<!-- end projects -->
 
 	<!-- work experience -->
-	<section id="workExperience">
-		<center>
-		<h1>Work Experience</h1>
-		<div class="holder">
-			<div class="text">
-				<section id="text_workExp">
-					<table class="table_container">
-						<tr id="table_rows">
-							<td id="image_container"><img src="img/BU.png"></td>
-							<td id="text_containter">
-								<ul id="work_details">
-									<li id="title_text">Bicol University - University Registrar's Office</li>
-									<li id="inria_bold">Computer Programmer (Intern)</li>
-									<li>
-										<ul id="tasks_done">
-											<li id="inria_normal">Led and assessed team members in learning Python programming language by handing out learning materials and YouTube videos</li>
-											<li id="inria_normal">Utilized Python programming language to develop a tool that assigns incoming online requests to designated office staffs and Colleges</li>
-											<li id="inria_normal">Communicated with the Office Programmer to gather information about software specifications and requirements and collaborated with team consisting of 5 members in planning, developing, and testing so that the specifications and requirements are met</li>
-										</ul>
-									</li>
-									<li id="text_datePlace">June 2021 - August 2021 | Albay, Philippines</li>
-								</ul>
-							</td>
-						</tr>	
-						<tr id="table_rows">
-							<td id="image_container"><img src="img/BUHS.png"></td>
-							<td id="text_containter">
-								<ul id="work_details">
-									<li id="title_text">BUCEILS High School Online Voting System</li>
-									<li id="inria_bold">System Analyst</li>
-									<li>
-										<ul id="tasks_done">
-											<li id="inria_normal">Administered 6 teams of 33 members to develop an Online Voting System for the school’s 2021 SSG Elections, achieving 73 to 93 percent of voter turnout on different grade levels out of 300+ students</li>
-											<li id="inria_normal">Conducted and participated in meetings to communicate both with the client and team leaders to determine the project requirements, monitor the project developmental progress, and ensure that the requirements are achieved at the end of the project</li>
-											<li id="inria_normal">Designed a Data Flow Diagram (DFD) that serves as guide to the team members in developing the web system and to make the client understand and check the correctness of web system components being developed</li>
-										</ul>
-									</li>
-									<li id="text_datePlace">August 2020 - May 2021 | Albay, Philippines</li>
-								</ul>
-							</td>
-						</tr>
-						<tr id="table_rows">
-							<td id="image_container"><img src="img/BUHS.png"></td>
-							<td id="text_containter">
-								<ul id="work_details">
-									<li id="title_text">BUCEILS High School Online Voting System</li>
-									<li id="inria_bold">Backend Security Developer</li>
-									<li>
-										<ul id="tasks_done">
-											<li id="inria_normal">Constructed a PHP script for user session such as authentication, termination, access control, and access logs to ensure that the website is accessed only by authorized users (Admin and Students)</li>
-											<li id="inria_normal">Installed Google CAPTCHA on the login page to secure the website from bots</li>
-										</ul>
-									</li>
-									<li id="text_datePlace">August 2020 - May 2021 | Albay, Philippines</li>
-								</ul>
-							</td>
-						</tr>
-					</table>
-				</section>
+	<div class="menu-section tight-padding">
+		<section id="workExperience">
+			<h1>Work Experience</h1>
+			<div class="holder">
+				<div class="text">
+					<section id="text_workExp">
+						<table class="table-container">
+							<tr id="table_rows">
+								<td id="image_container"><img src="img/BU.png"></td>
+								<td id="text_containter">
+									<ul id="work_details">
+										<!-- <li id="title_text">Bicol University - University Registrar's Office</li> -->
+										 <div class="title-row">
+											<li id="title_text">Bicol University - University Registrar's Office</li>
+											<div class="admin-controls">
+												<a href="#" class="btn-edit">Edit</a>
+												<button class="btn-delete">Delete</button>
+											</div>
+										</div>
+										<li id="inria_bold">Computer Programmer (Intern)</li>
+										<li>
+											<ul id="tasks_done">
+												<li id="inria_normal">Led and assessed team members in learning Python programming language by handing out learning materials and YouTube videos</li>
+												<li id="inria_normal">Utilized Python programming language to develop a tool that assigns incoming online requests to designated office staffs and Colleges</li>
+												<li id="inria_normal">Communicated with the Office Programmer to gather information about software specifications and requirements and collaborated with team consisting of 5 members in planning, developing, and testing so that the specifications and requirements are met</li>
+											</ul>
+										</li>
+										<li id="text_datePlace">June 2021 - August 2021 | Albay, Philippines</li>
+									</ul>
+								</td>
+							</tr>	
+							<tr id="table_rows">
+								<td id="image_container"><img src="img/BUHS.png"></td>
+								<td id="text_containter">
+									<ul id="work_details">
+										<!-- <li id="title_text">BUCEILS High School Online Voting System</li> -->
+										 <div class="title-row">
+											<li id="title_text">BUCEILS High School Online Voting System</li>
+											<div class="admin-controls">
+												<a href="#" class="btn-edit">Edit</a>
+												<button class="btn-delete">Delete</button>
+											</div>
+										</div>
+										<li id="inria_bold">System Analyst</li>
+										<li>
+											<ul id="tasks_done">
+												<li id="inria_normal">Administered 6 teams of 33 members to develop an Online Voting System for the school’s 2021 SSG Elections, achieving 73 to 93 percent of voter turnout on different grade levels out of 300+ students</li>
+												<li id="inria_normal">Conducted and participated in meetings to communicate both with the client and team leaders to determine the project requirements, monitor the project developmental progress, and ensure that the requirements are achieved at the end of the project</li>
+												<li id="inria_normal">Designed a Data Flow Diagram (DFD) that serves as guide to the team members in developing the web system and to make the client understand and check the correctness of web system components being developed</li>
+											</ul>
+										</li>
+										<li id="text_datePlace">August 2020 - May 2021 | Albay, Philippines</li>
+									</ul>
+								</td>
+							</tr>
+							<tr id="table_rows">
+								<td id="image_container"><img src="img/BUHS.png"></td>
+								<td id="text_containter">
+									<ul id="work_details">
+										<!-- <li id="title_text">BUCEILS High School Online Voting System</li> -->
+										<div class="title-row">
+											<li id="title_text">BUCEILS High School Online Voting System</li>
+											<div class="admin-controls">
+												<a href="#" class="btn-edit">Edit</a>
+												<button class="btn-delete">Delete</button>
+											</div>
+										</div>
+										<li id="inria_bold">Backend Security Developer</li>
+										<li>
+											<ul id="tasks_done">
+												<li id="inria_normal">Constructed a PHP script for user session such as authentication, termination, access control, and access logs to ensure that the website is accessed only by authorized users (Admin and Students)</li>
+												<li id="inria_normal">Installed Google CAPTCHA on the login page to secure the website from bots</li>
+											</ul>
+										</li>
+										<li id="text_datePlace">August 2020 - May 2021 | Albay, Philippines</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+				</div>
 			</div>
-		</div>
-		<hr></center>
-	</section>
+			<hr>
+		</section>
+	</div>
 	<!-- end work experience -->
 
 	<!-- education -->
+	 <div class="menu-section tight-padding">
 	<section id="education">
-		<center>
 		<h1>Education</h1>
 		<div class="holder">
 			<div class="text">
 				<section id="text_education">
-					<table class="table_container">
+					<table class="table-container">
 						<tr id="table_rows">
+							<tr>
+								<td colspan="3" id="education_level">College</td>
+							</tr>
 							<td id="image_container"><img src="img/BU.png"></td>
 							<td id="text_containter">
 								<ul id="work_details">
-									<li id="title_text">College</li>
-									<li id="inria_bold">Bicol University - College of Science</li>
-									<li id="inria_normal"><b>Year Graduated:</b> 2022</li>
+									<!-- <li id="education_level">College</li> -->
+									<!-- <li id="inria_bold">Bicol University - College of Science</li> -->
+									 <div class="title-row">
+											<li id="inria_bold">Bicol University - College of Science</li>
+											<div class="admin-controls">
+												<a href="#" class="btn-edit">Edit</a>
+												<button class="btn-delete">Delete</button>
+											</div>
+									</div>
+									<li id="inria_normal">Bachelor of Science in Computer Science</li>
+									<li id="inria_normal">2018 - 2022</li>
 									<li id="inria_normal">Awards Received:</li>
 									<li>
 										<ul id="tasks_done">
@@ -152,28 +191,50 @@
 							</td>
 						</tr>	
 						<tr id="table_rows">
+							<tr>
+								<td colspan="3" id="education_level">Senior High School</td>
+							</tr>
 							<td id="image_container"><img src="img/TNHS-logo.jpg"></td>
 							<td id="text_containter">
 								<ul id="work_details">
-									<li id="title_text">Senior High School</li>
-									<li id="inria_bold">Tabaco National High School</li>
-									<li id="inria_normal"><b>Year Graduated:</b> 2018</li>
+									<!-- <li id="title_text">Senior High School</li> -->
+									<!-- <li id="inria_bold">Tabaco National High School</li> -->
+									 <div class="title-row">
+											<li id="inria_bold">Tabaco National High School</li>
+											<div class="admin-controls">
+												<a href="#" class="btn-edit">Edit</a>
+												<button class="btn-delete">Delete</button>
+											</div>
+									</div>
+									<li id="inria_normal">Science, Technology, Engineering and Mathematics Strand (STEM)</li>
+									<li id="inria_normal">2016 - 2018</li>
 									<li id="inria_normal">Awards Received:</li>
 									<li>
 										<ul id="tasks_done">
-											<li id="inria_normal">With Honors</li>
+											<li id="inria_normal">Graduated With Honors</li>
 										</ul>
 									</li>
 								</ul>
 							</td>
 						</tr>	
 						<tr id="table_rows">
+							<tr>
+								<td colspan="3" id="education_level">Junior High School</td>
+							</tr>
 							<td id="image_container"><img src="img/TNHS-logo.jpg"></td>
 							<td id="text_containter">
 								<ul id="work_details">
-									<li id="title_text">Junior High School</li>
-									<li id="inria_bold">Tabaco National High School</li>
-									<li id="inria_normal"><b>Year Graduated:</b> 2016</li>
+									<!-- <li id="title_text">Junior High School</li> -->
+									<!-- <li id="inria_bold">Tabaco National High School</li> -->
+									 <div class="title-row">
+											<li id="inria_bold">Tabaco National High School</li>
+											<div class="admin-controls">
+												<a href="#" class="btn-edit">Edit</a>
+												<button class="btn-delete">Delete</button>
+											</div>
+									</div>
+									<li id="inria_normal">Basic Education Curriculum (BEC)</li>
+									<li id="inria_normal">2012 - 2016</li>
 								</ul>
 							</td>
 						</tr>	
@@ -181,32 +242,32 @@
 				</section>
 			</div>
 		</div>
-		<hr></center>
+		<hr>
 	</section>
+	</div>
 	<!-- end education -->
 
 	<!-- contact details -->
-	<section id="contactDetails">
-		<center>
-		<h1>Contact Details</h1>
-		<div class="holder">
-			<div class="text">
-				<section id="text_contact">
-					<center>
-					<p>For more information, you can reach me through the following link/s:</p>
-					<a href="https://www.linkedin.com/in/joshua-alex-llander-78b61a220/">LinkedIn</a> <ins>|</ins>
-					<a href="joshuaalexllander@gmail.com">Gmail</a> <ins>|</ins>
-					<a href="https://github.com/JoshuaAlexLlander">GitHub</a>
-					</center>
-				</section>
+	<div class="menu-section tight-padding">
+		<section id="contactDetails">
+			<h1>Contact Details</h1>
+			<div class="holder">
+				<div class="text">
+					<section id="text_contact">
+						<p>For more information, you can reach me through the following link/s:</p>
+						<a href="https://www.linkedin.com/in/joshua-alex-llander-78b61a220/">LinkedIn</a> <ins>|</ins>
+						<a href="joshuaalexllander@gmail.com">Gmail</a> <ins>|</ins>
+						<a href="https://github.com/JoshuaAlexLlander">GitHub</a>
+					</section>
+				</div>
 			</div>
-		</div>
-		<hr></center>
-	</section>
+			<hr>
+		</section>
+	</div>
 	<!-- end contact details -->
 	<!-- footer -->
 	<div class="footer">
-		<p>Copyright ⓒ 2022 - Joshua Alex Llander</p>
+		<p>Copyright ⓒ 2026 - Joshua Alex Llander</p>
 	</div>
 	<!-- end footer -->
 

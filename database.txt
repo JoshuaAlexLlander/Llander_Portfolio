@@ -1,0 +1,73 @@
+This is to plan out the Database to be used for this system.
+
+1. What information is displayed
+    __ABOUT ME
+        - Profile Photo
+        - Name
+        - Headline
+        - Professional Summary
+        - Location
+    __PROJECTS
+        - Project Photo/Logo
+        - Name
+        - Site (linked with the name/card tag)
+        - date created
+        - date deployed
+        - brief description
+    __WORK EXPERIENCE
+        - Company Logo
+        - Name (Company)
+        - Job Role / similar to headline
+        - Job description (bulleted list)
+        - Date From
+        - Date To
+        - Location
+    __EDUCATION
+        - School Logo
+        - Name
+        - Course / Strand
+        - Date From
+        - Date To
+        - Awards Received
+    __CONTACT DETAILS
+        - linkedin
+        - mail link to my gmail
+        - github link
+2. What data would be needed in the database
+    + types
+        - id (Pkey)
+        - category (user, experience, project)
+        - type
+    + users
+        - id (Pkey)
+        - type_id
+        - name
+        - email
+        - password
+        - profile_photo
+        - headline
+        - summary
+        - location
+    + portfolio_items
+        - id (PKey)
+        - type_id (FKey to types.id)
+        - institution
+        - title
+        - logo
+        - url
+        - date_from
+        - date_to
+        - location
+        - main_description (optional)
+    + item_details
+        - id (PKey)
+        - item_id (FKey to portfolio_items.id)
+        - content
+    + social_links
+        - id
+        - platform_name
+        - url
+3. Include proper relationships and indexes
+4. Test if data is displayed properly
+
+*plan -- make a drop down that lists the post type (project, work exp, education, contact details) when a dropdown is clicked, put a JS that changes <form method = "POST" action = "*THIS ONE*">
